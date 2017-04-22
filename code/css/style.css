@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    overflow: hidden;
+    transition: 250ms;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(100,100,100);
+}
+
+header {
+    display: -ms-flexbox;
+    display: flex;
+
+    /*center text*/
+    -ms-flex-align: center;
+        align-items: center;
+
+    -ms-flex-pack: center;
+        justify-content: center;
+
+    position: relative;
+
+    height: 7em;
+
+    color: rgb(0, 51, 77);
+    background-color: rgb(240,240,240);
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#content {
+    display: -ms-flexbox;
+    display: flex;
+
+    height: calc(100% - 5em);
+}
+
+section {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+aside {
+    position:absolute;
+    z-index: 1;
+
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-direction: column;
+        flex-direction: column;
+
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+
+    width: 6em;
+    padding-right: 1em;
+
+    overflow: visible;
+}
+
+#home {
+    position:relative;
+    margin: 0.5em;
+
+    width: 5em;
+    height: 5em;
+
+    background-image: url("../img/home.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.blackWrapper {
+    width: 100%;
+    height: calc(100% - 5em);
+
+    background-color: black;
+}
+
+#chart {
+    z-index: 50;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../img/chart.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    opacity: 0.7;
+}
+
+#chart:hover {
+    opacity: 1;
+}
+
+.side-button {
+    z-index: 100;
+
+    display: block;
+    position: relative;
+
+    width: 6em;
+    height: 6em;
+
+    margin-top: 2em;
+
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+
+    background-color: rgb(240,240,240);
+}
+
+.side-button:hover {
+    width: 6.5em;
+    padding-left: 0.5em;
+    cursor: pointer;
+}
+
+.floating-button {
+    z-index: 100;
+
+    display: block;
+    position: absolute;
+
+    top: 2em;
+    left: 2em;
+
+    width: 3em;
+    height: 3em;
+
+    border-radius: 0.5em;
+
+    background-color: rgba(0,0,0,0);
+    background-image: url("../img/back.png");
+    background-size: contain;
+}
+
+.floating-button:hover {
+    left: 1em;
+    cursor: pointer;
+}
+
+main {
+    display: block;
+
+    position: relative;
+
+    top: 1em;
+    left: 1em;
+
+    width: calc(100vw - 2em);
+    height: calc(100vh - 2em);
+
+    border-radius: 4px;
+}
