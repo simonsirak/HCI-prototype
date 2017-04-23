@@ -10,7 +10,7 @@ body {
     width: 100vw;
     height: 100vh;
 
-    background-color: rgb(100,100,100);
+    background-color: rgb(255, 77, 136);
 }
 
 header {
@@ -121,7 +121,7 @@ aside {
     border-top-right-radius: 1.5em;
     border-bottom-right-radius: 1.5em;
 
-    background-color: rgb(220,220,220);
+    background-color: rgb(240,240,240);
 }
 
 .side-button:hover {
