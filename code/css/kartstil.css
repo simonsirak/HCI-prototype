@@ -80,7 +80,19 @@ aside {
     background-size: contain;
     background-repeat: no-repeat;
 }
+.description {
+  display: inline-block;
+  position: relative;
+  background: white;
+  width: 50%;
+}
 
+.description1 {
+  display: inline-block;
+  position: absolute;
+  background: blue;
+  width: 50%;
+}
 .wrapper {
     /* easier to position pins and search bar when this is relative */
     position: relative;
