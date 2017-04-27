@@ -90,9 +90,10 @@ aside {
 .description1 {
   display: inline-block;
   position: absolute;
-  background: blue;
   width: 50%;
+  background: blue;
 }
+
 .wrapper {
     /* easier to position pins and search bar when this is relative */
     position: relative;
