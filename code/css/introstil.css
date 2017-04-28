@@ -1,0 +1,45 @@
+.mySlides {
+    transition: 1000ms;
+
+    display: block;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background-size: cover;
+}
+
+.forward {
+    display: -ms-flexbox;
+    display: flex;
+
+    /*center text*/
+    -ms-flex-align: center;
+        align-items: center;
+
+    -ms-flex-pack: center;
+        justify-content: center;
+
+    position: absolute;
+
+    width: 10em;
+    height: 10em;
+
+    bottom: 3em;
+    left: calc(50% - 5em);
+
+    border-radius: 5em;
+
+    background-color: blue;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    cursor: pointer;
+}
