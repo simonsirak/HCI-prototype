@@ -182,12 +182,69 @@ aside {
 
 .info {
     display: block;
-    position: relative;
+    position: absolute;
 
     /* streches the bounding box as well */
+    margin-top: 130px;
     margin-left: 2em;
     margin-bottom: 2em;
 
+    width: 15em;
+    min-height: 4em;
+
+    padding: 0.5em;
+    color: black;
+
+    border-radius: 0.2em;
+
+    background-color: rgb(240,240,240);
+    border: solid 1px rgb(20,20,20);
+}
+
+.info2 {
+    display: block;
+    position: absolute;
+
+    /* streches the bounding box as well */
+    margin-left: -258px;
+    margin-bottom: 30px;
+    width: 15em;
+    min-height: 4em;
+
+    padding: 0.5em;
+    color: black;
+
+    border-radius: 0.2em;
+
+    background-color: rgb(240,240,240);
+    border: solid 1px rgb(20,20,20);
+}
+
+.info3 {
+    display: block;
+    position: relative;
+
+    /* streches the bounding box as well */
+    margin-left: 32px;
+    margin-bottom: 30px;
+    width: 15em;
+    min-height: 4em;
+
+    padding: 0.5em;
+    color: black;
+
+    border-radius: 0.2em;
+
+    background-color: rgb(240,240,240);
+    border: solid 1px rgb(20,20,20);
+}
+
+.info4 {
+    display: block;
+    position: relative;
+
+    /* streches the bounding box as well */
+    margin-left: -258px;
     width: 15em;
     min-height: 4em;
 
@@ -207,6 +264,8 @@ aside {
 
 .faded {
     position: absolute;
+    width: 100%;
+
     bottom: 0em;
     left: 0em;
 
