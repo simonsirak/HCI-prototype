@@ -101,7 +101,7 @@ aside {
     background-size: cover;
     background-repeat: no-repeat;
 
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 
@@ -366,7 +366,7 @@ main {
 .stuff {
     position: absolute;
 
-    font-size: 1.2em;
+    font-size: 1.1em;
 
     bottom: 40px;
     left: 0;
@@ -375,9 +375,8 @@ main {
 
     padding: 1em;
 
-    background-color: rgba(0,0,0,0.5);
-
     color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -385,6 +384,6 @@ main {
 
 @keyframes horizontalfloat {
     0% {left: 14px;}
-    50% {left: 24px;}
+    50% {left: 19px;}
     100% {left: 14px;}
 }
