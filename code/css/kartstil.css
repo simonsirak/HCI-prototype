@@ -4,13 +4,15 @@
 
     overflow: hidden;
     transition: 250ms;
+
+    font-family: "Raleway";
 }
 
 body {
     width: 100vw;
     height: 100vh;
 
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(200,200,200);
 }
 
 header {
