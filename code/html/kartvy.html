@@ -11,6 +11,9 @@
 		<!-- for icons (use classes fa and fa-desiredicon along with some styling to achieve an icon effect)-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -22,19 +25,31 @@
 	<body>
         <main>
 
-            <div class="floating-button" id="back" onclick="goBack()"></div>
-
-            <header>
-                <h2> PROJEKT NÄRA DIG </h2>
-            </header>
+            <i class="fa fa-arrow-left" id="back" onclick="goBack()"></i>
 
             <aside>
-                <div class="side-button"> <a href="kartvy.html"><div id="home"> </div></a> </div>
+                <div class="side-button">
+					<a href="kartvy.html">
+						<i class="fa fa-home" style="font-size: 40px; color: white;"></i>
+					</a>
+				</div>
+				<div class="side-button">
+					<a href="kartvy.html">
+						<i class="fa fa-home" style="font-size: 40px; color: white;"></i>
+					</a>
+				</div>
+				<div class="side-button">
+					<a href="kartvy.html">
+						<i class="fa fa-home" style="font-size: 40px; color: white;"></i>
+					</a>
+				</div>
             </aside>
 
             <section>
                 <div class="wrapper">
-					<input type="search"> </input>
+					<div class="input">
+						<input type="search"> </input>
+					</div>
                     <div id="chart"></div>
 					<div class="floating-button pin" style="top: 50%; left: 50%;">
 
@@ -67,8 +82,18 @@
 					</div>
                 </div>
             </section>
+
+			<div class="stuff">
+				Klicka på en pin för att se vad projektet handlar om.
+				<br><br>
+				Sök efter specifika projekt eller använd filtren i övre högra
+				hörnet.
+				<br><br>
+				
+			</div>
         </main>
 
-        <script type="text/javascript" src="../js/back.js"></script>
+		<script type="text/javascript" src="../js/back.js"></script>
+		<script type="text/javascript" src="../js/fadein.js"></script>
 	</body>
 </html>
