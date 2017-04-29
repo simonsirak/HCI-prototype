@@ -1,3 +1,30 @@
+main {
+    position: relative;
+}
+
+header {
+    z-index: 1000;
+    position: absolute;
+
+    width: 100%;
+
+    padding-left: 1em;
+
+    background-color: rgba(0,0,0,0.6);
+
+    -ms-flex-pack: left;
+        justify-content: left;
+}
+
+section {
+    background-color: black;
+}
+.wrapper {
+    height: 100%;
+
+    opacity: 0.6;
+}
+
 .mySlides {
     transition: 1000ms;
 
@@ -10,7 +37,7 @@
     height: 100%;
     width: 100%;
 
-    background-size: cover;
+    border-radius: 4px;
 }
 
 .forward {
@@ -26,20 +53,46 @@
 
     position: absolute;
 
-    width: 10em;
-    height: 10em;
+    bottom: 1em;
+    left: 1em;
 
-    bottom: 3em;
-    left: calc(50% - 5em);
+    width: calc(100% - 2em);
+    height: 2em;
 
-    border-radius: 5em;
+    color: black;
+    background-color: rgb(240,240,240);
 
-    background-color: blue;
+    border-radius: 4px;
+}
+h3 {
+    font-size: 1.7em;
+
+    border-bottom: solid 1px gray;
 }
 a {
+    font-size: 1.4em;
     text-decoration: none;
     color: white;
 }
 a:hover {
     cursor: pointer;
+}
+.intro {
+    font-size: 1em;
+
+    z-index: 1000;
+    position: absolute;
+
+    left: 40px;
+    top: 40px;
+
+    width: 450px;
+    height: calc(50% - 7em);
+
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+
+    border-radius: 6px;
+
+    padding: 1em;
 }
