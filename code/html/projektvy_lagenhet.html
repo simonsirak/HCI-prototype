@@ -6,10 +6,17 @@
 
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+		<!-- for icons (use classes fa and fa-desiredicon along with some styling to achieve an icon effect)-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		<link rel="stylesheet" type="text/css" href="../css/projektstil.css">
 
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 		<title> KTH </title>
 
@@ -17,77 +24,73 @@
 
 	<body>
         <main>
-            <div class="floating-button" id="back" onclick="goBack()"></div>
-            <header>
-                <h2> LÄGENHET </h2>
-            </header>
+			<i class="fa fa-arrow-left" id="back" onclick="goBack()"></i>
+			<aside>
+				<div class="side-button">
+					<a href="kartvy.html">
+						<i class="fa fa-home" style="font-size: 40px; color: white;"></i>
+					</a>
+				</div>
+				<div class="side-button">
+					<a href="kartvy.html">
+						<i class="fa fa-home" style="font-size: 40px; color: white;"></i>
+					</a>
+				</div>
+				<div class="side-button">
+					<a href="kartvy.html">
+						<i class="fa fa-home" style="font-size: 40px; color: white;"></i>
+					</a>
+				</div>
+			</aside>
 
-            <aside>
-                <div class="side-button"> <a href="kartvy.html"><div id="home"> </div></a> </div>
-            </aside>
+			<section class="content">
+				<h2> Lägenhet. </h2>
 
-            <section class="projectinfo">
-                <div class="wrapper">
+				<div class="wrapper">
+				  <div class="mySlides fade">
+					  <img src="../img/introimg.jpg" style="height:100%; width: 100%;">
+				  </div>
 
-																	<div class="slideshow-container">
-								  <div class="mySlides fade">
-								    <div class="numbertext">1 / 3</div>
-								    <img src="../img/lagenhet1.jpg" style="width:100%">
-								    <div class="text">Caption Text</div>
-								  </div>
+				  <div class="mySlides fade">
+					  <img src="../img/lagenhet2.jpg" style="height:100%; width: 100%;">
+				  </div>
 
-								  <div class="mySlides fade">
-								    <div class="numbertext">2 / 3</div>
-								    <img src="../img/lagenhet2.jpg" style="width:100%">
-								    <div class="text">Caption Two</div>
-								  </div>
+				  <div class="mySlides fade">
+					  <img src="../img/lagenhet3.jpg" style="height:100%; width: 100%;">
+				  </div>
+				</div>
 
-								  <div class="mySlides fade">
-								    <div class="numbertext">3 / 3</div>
-								    <img src="../img/lagenhet3.jpg" style="width:100%">
-								    <div class="text">Caption Three</div>
-								  </div>
+				<div id="timeline"></div> <!-- picture for timeline-->
 
-								  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-								  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-								</div>
-								<br>
+	            <section class="projectinfo">
+					<div class="projecttext">
+						<h3> Leve livet. </h3>
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+						<h3> Läs mer om oss! </h3>
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+					</div>
+	            </section>
 
-								<div style="text-align:center">
-								  <span class="dot" onclick="currentSlide(1)"></span>
-								  <span class="dot" onclick="currentSlide(2)"></span>
-								  <span class="dot" onclick="currentSlide(3)"></span>
-								</div>
+				<section class="newsfeed">
+					<h3 style="margin-left: 0em; margin-bottom: 1em;"> Intresserad? </h3>
+					<div style="overflow: hidden;">
+						<div id="QR"></div>
+						QR-koden tar dig till projektägarens hemsida. Du kan även
+						välja att prenumerera till projektet med din epostadress.
+						<a href="projektvy_lagenhet.html" class="forward"> Prenumerera! </a>
+					</div>
 
-                </div>
-								<div id="timeline"></div> <!-- picture for timeline-->
-								<div id="projecttext">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-            </section>
+					<div id="feed">
+						<h3 style="margin-left: 0em; margin-top: 0.5em; margin-bottom: 1em;"> Flöde: </h3>
 
-						<section class="newsfeed">
-							<div id="QR"></div>
-							<div id="feed">
-
-								<div class="talk-bubble tri-right left-top">
-								  <div class="talktext">
-								    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-								  </div>
-								</div>
-
-								<div class="talk-bubble tri-right left-top">
-								  <div class="talktext">
-								    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-								  </div>
-								</div>
-
-							</div>
-						</section>
+						Ingen har diskuterat projektet.
+					</div>
+				</section>
+			</section>
         </main>
 
         <script type="text/javascript" src="../js/back.js"></script>
-				<script type="text/javascript" src="../js/project_slideshow.js"></script>
+		<script type="text/javascript" src="../js/slideshow.js"></script>
+		<script type="text/javascript" src="../js/fadein.js"></script>
 	</body>
 </html>

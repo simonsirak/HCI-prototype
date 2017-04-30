@@ -30,4 +30,18 @@ $(document).ready(function(){
             redon = false;
         }
     });
+
+    $("#yellow").click(function(){
+        if(!redon){
+            $(this).css("background-color","rgba(255,255,255,0.5)");
+            $(".yellow").fadeIn("fast");
+
+            redon = true;
+        } else {
+            $(this).css("background-color","rgba(0,0,0,0)");
+            $(".yellow").fadeOut("fast");
+
+            redon = false;
+        }
+    });
 });

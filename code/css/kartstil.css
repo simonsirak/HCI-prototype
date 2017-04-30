@@ -169,7 +169,7 @@ aside {
     color: yellow;
 }
 .info {
-    z-index: 100000;
+    z-index: 200;
 
     font-size: 0.5em;
 
@@ -194,7 +194,7 @@ aside {
 }
 
 .info2 {
-    z-index: 100000;
+    z-index: 200;
 
     font-size: 0.5em;
 
@@ -217,7 +217,7 @@ aside {
 }
 
 .info3 {
-    z-index: 100000;
+    z-index: 1000000;
 
     font-size: 0.5em;
 
