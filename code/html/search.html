@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<link rel="stylesheet" type="text/css" href="../css/search.css">
+
+		<!-- for icons (use classes fa and fa-desiredicon along with some styling to achieve an icon effect)-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+		<!-- Script to insert another HTML file with content to this HTML file -->
+		<script src="https://www.w3schools.com/lib/w3data.js"></script>
+		<title> KTH </title>
+
+	</head>
+
+	<body>
+        <main>
+
+            <i class="fa fa-arrow-left" id="back" onclick="goBack()"></i>
+
+            <aside>
+                <div class="side-button">
+					<a href="kartvy.html">
+						<i class="fa fa-home" style="font-size: 40px; color: white;"></i>
+					</a>
+				</div>
+				<div class="side-button">
+					<a href="search.html">
+						<i class="fa fa-search" style="font-size: 40px; color: white;"></i>
+					</a>
+				</div>
+				<div class="side-button">
+					<a href="kartvy.html">
+						<i class="fa fa-home" style="font-size: 40px; color: white;"></i>
+					</a>
+				</div>
+            </aside>
+
+            <section>
+                <div class="wrapper">
+					<div class="input" style="color: white; font-size: 0.8em;">
+						Sök med nyckelord:
+
+						<input type="text" list=projects> </input>
+						<datalist id=projects>
+							<option value="Akalla, Akallalänken">
+							<option value="Albano">
+							<option value="Bromma, Blackebergsvägen">
+							<option value="Bromma, Lägenheter (DEMO)">
+							<option value="Bromma, Gustav III:s väg">
+							<option value="Bromma, Gustavslundsvägen">
+							<option value="Bromma, kvarteret Sykorgen">
+							<option value="Bromma, Margretelundsvägen">
+							<option value="Bromma, Nockebyhov">
+							<option value="Bromma, Runda vägen">
+							<option value="Bromma, Stora Mossens backe">
+							<option value="Bromma, Ulvsundavägen">
+							<option value="Bromma, Västerled">
+							<option value="Bromma, Ängby, Bergslagsvägen">
+							<option value="Bromma, Äppelviken">
+							<option value="Bromma: Bällsta bro">
+							<option value="Brommaplan">
+							<option value="Bromsten, Gunilla 20">
+							<option value="Bällsta, Bällstavägen">
+							<option value="Bällsta, Bällstavägen/Gamla Bromstensvägen ">
+							<option value="Bällsta, Gamla Bromstensvägen">
+							<option value="Bällsta, Södra Solvallastaden">
+							<option value="City ">
+							<option value="Citybanan">
+							<option value="Djurgården, Djurgården 1:38 (Beckholmen) ">
+							<option value="Hammarbyhöjden 1:1">
+							<option value="Hammarbyhöjden, Arenakopplet">
+							<option value="Hammarbyhöjden, Garagevägen">
+							<option value="Hammarbyhöjden, Gullpigans lekplats">
+							<option value="Hjorthagen, Ängsbotten">
+							<option value="Hägerstenshamnens skola">
+							<option value="Hägerstensåsen, Skattsedeln ">
+							<option value="Hägerstensåsen, Sparbanksboken">
+							<option value="Hägerstensåsen, Södertäljevägen och Korpmossevägen">
+							<option value="Östermalm, Östermalm 1:61">
+							<option value="Östermalm, Östermalm 3:62">
+							<option value="Östermalm, Östermalm 3:62 (Restaurang, café)">
+							<option value="Östermalmshallen">
+						</datalist>
+					</div>
+
+					<div class="input" style="color: white; font-size: 0.8em; top: 4em; width: 150px; -ms-flex-direction: column;
+						flex-direction: column; padding: 1em; border-top-left-radius: 4px;">
+						<h3 style="text-align: right; margin-bottom: 1em; font-size: 1.6em; border-bottom: solid 1px gray;"> Vad vill du se? </h3>
+						<div class="filter" id="red"> Hus: <i class="fa fa-map-marker" style="font-size: 32px; color: red; display: inline-block; margin-left: 20px;"> </i> </div>
+						<div class="filter" id="black"> Parker: <i class="fa fa-map-marker" style="font-size: 32px; color: black; display: inline-block; margin-left: 20px;"> </i> </div>
+						<div class="filter" id="yellow"> Vägar: <i class="fa fa-map-marker" style="font-size: 32px; color: yellow; display: inline-block; margin-left: 20px;"> </i> </div>
+					</div>
+
+                    <div id="chart">
+                        <div id="search">
+                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+                            <ul id="myUL">
+                                <li><a href="#" class="header">A</a></li>
+								<li><a href="#">Akalla, Akallalänken</a></li>
+                                <li><a href="#">Albano</a></li>
+								<li><a href="#" class="header">B</a></li>
+								<li><a href="#">Bromma, Blackebergsvägen</a></li>
+                                <li><a href="projektvy_lagenhet.html">Bromma, Lägenheter (DEMO)</a></li>
+								<li><a href="#">Bromma, Gustav III:s väg</a></li>
+                                <li><a href="#">Bromma, Gustavslundsvägen</a></li>
+								<li><a href="#">Bromma, Margretelundsvägen</a></li>
+                                <li><a href="#">Bromma, Nockebyhov</a></li>
+								<li><a href="#">Bromma, Runda vägen</a></li>
+								<li><a href="#">Bromma, Stora Mossens backe</a></li>
+								<li><a href="#">Bromma, Stora Mossens backe</a></li>
+								<li><a href="#">Bromma, Ulvsundavägen</a></li>
+								<li><a href="#">Bromma, Västerled</a></li>
+								<li><a href="#">Bromma, Ängby, Bergslagsvägen</a></li>
+								<li><a href="#">Bromma, Äppelviken"</a></li>
+								<li><a href="#">Bromma, Bällsta bro</a></li>
+								<li><a href="#">Brommaplan</a></li>
+								<li><a href="#">Bromsten, Gunilla 20</a></li>
+								<li><a href="#">Bällsta, Bällstavägen</a></li>
+								<li><a href="#">Bällsta, Bällstavägen/Gamla Bromstensvägen</a></li>
+								<li><a href="#">Bällsta, Gamla Bromstensvägen</a></li>
+								<li><a href="#">Bällsta, Södra Solvallastaden</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">C</a></li>
+								<li><a href="#">City</a></li>
+								<li><a href="#">Citybanan</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">D</a></li>
+								<li><a href="#">Djurgården, Djurgården 1:38 (Beckholmen)</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">E</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">F</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">G</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">H</a></li>
+								<li><a href="#">Hammarbyhöjden 1:1</a></li>
+								<li><a href="#">Hammarbyhöjden, Arenakopplet</a></li>
+								<li><a href="#">Hammarbyhöjden, Garagevägen</a></li>
+								<li><a href="#">Hammarbyhöjden, Gullpigans lekplats</a></li>
+								<li><a href="#">Hjorthagen, Ängsbotten</a></li>
+								<li><a href="#">Hägerstenshamnens skola</a></li>
+								<li><a href="#">Hägerstensåsen, Skattsedeln</a></li>
+								<li><a href="#">Hägerstensåsen, Sparbanksboken</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">I</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">J</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">K</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">M</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">N</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">O</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">P</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">Q</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">R</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">S</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">T</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">U</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">V</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">W</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">Å</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">Ä</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#" class="header">Ö</a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+								<li><a href="#"> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+			<!--
+			<div class="stuff">
+				Klicka på en pin för att se vad projektet handlar om.
+				<br><br>
+				Sök efter specifika projekt eller använd filtren i övre högra
+				hörnet.
+			</div>
+			-->
+        </main>
+
+		<script type="text/javascript" src="../js/back.js"></script>
+		<script type="text/javascript" src="../js/fadein.js"></script>
+		<script type="text/javascript" src="../js/filter.js"></script>
+        <script type="text/javascript" src="../js/searchfilter.js"></script>
+	</body>
+</html>
