@@ -47,11 +47,22 @@
 
             <section>
                 <div class="wrapper">
-					<div class="input">
+					<div class="input" style="color: white; font-size: 0.8em;">
+						Sök med nyckelord:
+
 						<input type="search"> </input>
 					</div>
+
+					<div class="input" style="color: white; font-size: 0.8em; top: 4em; width: 150px; -ms-flex-direction: column;
+						flex-direction: column; padding: 1em; border-top-left-radius: 4px;">
+						<h3 style="text-align: right; margin-bottom: 1em; font-size: 1.6em; border-bottom: solid 1px gray;"> Vad vill du se? </h3>
+						<div class="filter" id="red"> Hus: <i class="fa fa-map-marker" style="font-size: 32px; color: red; display: inline-block; margin-left: 20px;"> </i> </div>
+						<div class="filter" id="black"> Parker: <i class="fa fa-map-marker" style="font-size: 32px; color: black; display: inline-block; margin-left: 20px;"> </i> </div>
+						<div class="filter" id="yellow"> Vägar: <i class="fa fa-map-marker" style="font-size: 32px; color: yellow; display: inline-block; margin-left: 20px;"> </i> </div>
+					</div>
+
                     <div id="chart"></div>
-					<div class="floating-button pin" style="top: 50%; left: 50%;">
+					<div class="floating-button pin red fa fa-map-marker" style="top: 50%; left: 50%; font-size: 2em;">
 
 						<div class="faded">
 							<div class="info">
@@ -80,6 +91,17 @@
 
 						</div>
 					</div>
+
+					<div class="floating-button pin black fa fa-map-marker" style="top: 70%; left: 30%; font-size: 2em;">
+
+						<div class="faded">
+							<div class="info2">
+								Här tänkte vi bygga lite lägenheter. Snälla hjälp oss -- vi vet inte vad vi sysslar med :^)
+
+								<a class="more" href="projektvy_lagenhet.html"> Mer </a>
+							</div>
+						</div>
+					</div>
                 </div>
             </section>
 
@@ -95,5 +117,6 @@
 
 		<script type="text/javascript" src="../js/back.js"></script>
 		<script type="text/javascript" src="../js/fadein.js"></script>
+		<script type="text/javascript" src="../js/filter.js"></script>
 	</body>
 </html>
