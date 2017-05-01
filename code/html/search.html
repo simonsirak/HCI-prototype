@@ -32,7 +32,7 @@
             <aside>
                 <div class="side-button">
 					<a href="kartvy.html">
-						<i class="fa fa-home" style="font-size: 40px; color: white;"></i>
+						<i class="fa fa-globe" style="font-size: 40px; color: white;"></i>
 					</a>
 				</div>
 				<div class="side-button">
@@ -42,16 +42,18 @@
 				</div>
 				<div class="side-button">
 					<a href="kartvy.html">
-						<i class="fa fa-home" style="font-size: 40px; color: white;"></i>
+						<i class="fa fa-language" style="font-size: 40px; color: white;"></i>
 					</a>
 				</div>
             </aside>
 
             <section>
                 <div class="wrapper">
+					<div class="input" style="color: white; font-size: 0.8em;">
+						Sök med nyckelord:
 
-						<input type="hidden" list="projects"> </input>
-						<datalist id="projects">
+						<input type="text" list=projects> </input>
+						<datalist id=projects>
 							<option value="Akalla, Akallalänken">
 							<option value="Albano">
 							<option value="Bromma, Blackebergsvägen">
@@ -91,6 +93,15 @@
 							<option value="Östermalm, Östermalm 3:62 (Restaurang, café)">
 							<option value="Östermalmshallen">
 						</datalist>
+					</div>
+
+					<div class="input" style="color: white; font-size: 0.8em; top: 4em; width: 150px; -ms-flex-direction: column;
+						flex-direction: column; padding: 1em; border-top-left-radius: 4px;">
+						<h3 style="text-align: right; margin-bottom: 1em; font-size: 1.6em; border-bottom: solid 1px gray;"> Vad vill du se? </h3>
+						<div class="filter" id="red"> Hus: <i class="fa fa-map-marker" style="font-size: 32px; color: red; display: inline-block; margin-left: 20px;"> </i> </div>
+						<div class="filter" id="black"> Parker: <i class="fa fa-map-marker" style="font-size: 32px; color: black; display: inline-block; margin-left: 20px;"> </i> </div>
+						<div class="filter" id="yellow"> Vägar: <i class="fa fa-map-marker" style="font-size: 32px; color: yellow; display: inline-block; margin-left: 20px;"> </i> </div>
+					</div>
 
                     <div id="chart">
                         <div id="search">
